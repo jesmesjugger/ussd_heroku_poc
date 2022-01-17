@@ -1,7 +1,6 @@
 import bodyParser from 'body-parser';
 import logger from 'morgan';
 import express from 'express';
-#test
 const app = express();
 const PORT = process.env.PORT || 3100;
 #testtest
