@@ -7,7 +7,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/****/****'
+        git 'https://github.com/jesmesjugger/ussd_heroku_poc.git'
       }
     }
      
