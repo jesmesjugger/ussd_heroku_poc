@@ -5,9 +5,9 @@ pipeline {
     
   stages {
         
-    stage('Git') {
+    stage('Cloning Code') {
       steps {
-        git 'https://github.com/****/****'
+        git 'https://github.com/jesmesjugger/ussd_heroku_poc.git'
       }
     }
      
