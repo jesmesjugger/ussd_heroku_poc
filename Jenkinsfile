@@ -5,24 +5,21 @@ pipeline {
     
   stages {
         
-    stage('Cloning Code') {
+    stage('Cloning Git') {
       steps {
         git 'https://github.com/jesmesjugger/ussd_heroku_poc.git'
       }
     }
-     
-    stage('Build') {
+        
+    stage('Install dependencies') {
       steps {
         sh 'npm install'
-         sh 'npm build'
-      }
-    }  
-    
-            
-    stage('Test') {
-      steps {
-        sh 'node test'
       }
     }
+    stage('Test') {
+      steps {
+         sh 'npm test'
+      }
+    }      
   }
 }
